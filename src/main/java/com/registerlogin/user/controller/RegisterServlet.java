@@ -12,7 +12,15 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
         req.getRequestDispatcher("register.jsp").forward(req,resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String name=req.getParameter("name");
+        String email=req.getParameter("email");
+        String password=req.getParameter("password");
+        System.out.println(name+email+password);
+
     }
 }
