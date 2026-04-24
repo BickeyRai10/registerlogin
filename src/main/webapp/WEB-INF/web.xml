@@ -3,4 +3,62 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.registerlogin.home.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.registerlogin.user.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.registerlogin.user.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddTopicServlet</servlet-name>
+        <servlet-class>com.registerlogin.topic.controller.AddTopicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTopicServlet</servlet-name>
+        <url-pattern>/add-topic</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.registerlogin.home.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateTopicServlet</servlet-name>
+        <servlet-class>com.registerlogin.topic.controller.UpdateTopicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateTopicServlet</servlet-name>
+        <url-pattern>/update-topic</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AllTopicServlet</servlet-name>
+        <servlet-class>com.registerlogin.topic.controller.AllTopicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllTopicServlet</servlet-name>
+        <url-pattern>/all-topic</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
