@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpSession;
 
 import javax.xml.crypto.dsig.spec.XPathType;
 import java.io.IOException;
-//@WebFilter("/all-topic")
+@WebFilter("/all-topic")
 public class AuthFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
